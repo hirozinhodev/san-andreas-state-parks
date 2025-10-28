@@ -1,4 +1,4 @@
-import { Shield, TreePine, Users, Award, ChevronRight, Sparkles } from 'lucide-react'
+import { Shield, TreePine, Users, Award, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -217,26 +217,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* call to action */}
-      <section className="py-20 bg-gradient-to-br from-moss-green-700 via-moss-green-600 to-moss-green-800">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            ¿Listo para Hacer la Diferencia?
-          </h2>
-          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-            Únete a nuestro equipo de Park Rangers y ayuda a proteger 
-            la belleza natural de San Andreas
-          </p>
-          <Link
-            to="/reclutamiento"
-            className="inline-flex items-center px-10 py-5 bg-white text-moss-green-800 font-bold rounded-lg hover:bg-park-yellow-50 hover:text-moss-green-900 transition-all duration-300 hover:scale-105 shadow-xl text-lg"
-          >
-            Ver Oportunidades
-            <ChevronRight className="ml-2" size={24} />
-          </Link>
         </div>
       </section>
     </div>
