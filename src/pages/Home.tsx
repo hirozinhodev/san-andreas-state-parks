@@ -155,66 +155,48 @@ const Home = () => {
               <img 
                 src="/images/ranger-landscape.jpg" 
                 alt="Ranger en paisaje" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-park-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <p className="text-white font-semibold p-4">Patrullaje y Vigilancia</p>
-              </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <img 
                 src="/images/team-view.jpg" 
                 alt="Equipo observando" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-park-green/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <p className="text-white font-semibold p-4">Trabajo en Equipo</p>
-              </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <img 
                 src="/images/helicopter.jpg" 
                 alt="Helicóptero" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-park-yellow/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <p className="text-white font-semibold p-4">Operaciones Aéreas</p>
-              </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <img 
                 src="/images/vehicle-road.jpg" 
                 alt="Vehículo en carretera" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-park-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <p className="text-white font-semibold p-4">Patrullaje Terrestre</p>
-              </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <img 
                 src="/images/forest-view.jpg" 
                 alt="Vista del bosque" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-park-green/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <p className="text-white font-semibold p-4">Conservación Forestal</p>
-              </div>
             </div>
 
             <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <img 
                 src="/images/vehicle-forest.jpg" 
                 alt="Vehículo en bosque" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 object-cover group-hover:scale-110 group-hover:brightness-90 transition-all duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-park-yellow/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <p className="text-white font-semibold p-4">Acceso a Zonas Remotas</p>
-              </div>
             </div>
           </div>
         </div>
