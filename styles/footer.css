@@ -1,0 +1,14 @@
+.site-footer {
+    background-color: #3a5a40; /* Cor verde musgo */
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+}

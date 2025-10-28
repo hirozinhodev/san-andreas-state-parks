@@ -1,0 +1,13 @@
+/* ... existing code ... */
+.footer-bottom {
+    background-color: #3a5a40; /* Moss green color */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #ffffff;
+    margin: 0;
+    font-size: 14px;
+}
+/* ... existing code ... */
