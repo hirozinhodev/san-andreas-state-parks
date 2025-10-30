@@ -1,6 +1,9 @@
 import { MapPin, Phone, Mail } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation()
+
   return (
     <footer className="bg-gradient-to-br from-moss-green-700 via-moss-green-600 to-moss-green-800 text-white">
       <div className="container mx-auto px-4 py-12">
@@ -18,21 +21,20 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-white/90 leading-relaxed">
-              Protegiendo y preservando la belleza natural de San Andreas 
-              para las generaciones futuras.
+              {t('protecting_preserving')}
             </p>
           </div>
 
           {/* contato */}
           <div>
             <h4 className="font-semibold text-lg mb-4 text-park-yellow">
-              Contacto
+              {t('contact')}
             </h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />
                 <p className="text-sm text-white/90">
-                  San Andreas, Estado de San Andreas
+                  {t('san_andreas_state')}
                 </p>
               </div>
               <div className="flex items-center space-x-3">
@@ -53,7 +55,7 @@ const Footer = () => {
           {/* links rapidos */}
           <div>
             <h4 className="font-semibold text-lg mb-4 text-park-yellow">
-              Enlaces Rápidos
+              {t('quick_links')}
             </h4>
             <ul className="space-y-2">
               <li>
@@ -61,7 +63,7 @@ const Footer = () => {
                   href="/" 
                   className="text-sm text-white/90 hover:text-park-yellow transition-colors"
                 >
-                  Inicio
+                  {t('home')}
                 </a>
               </li>
               <li>
@@ -69,7 +71,7 @@ const Footer = () => {
                   href="/reclutamiento" 
                   className="text-sm text-white/90 hover:text-park-yellow transition-colors"
                 >
-                  Únete a Nosotros
+                  {t('recruitment')}
                 </a>
               </li>
             </ul>
@@ -79,7 +81,7 @@ const Footer = () => {
         {/* copyright */}
         <div className="border-t border-white/20 mt-8 pt-6 text-center">
           <p className="text-sm text-white/80">
-            © {new Date().getFullYear()} San Andreas State Parks. Todos los derechos reservados.
+            © {new Date().getFullYear()} San Andreas State Parks. {t('all_rights_reserved')}
           </p>
         </div>
       </div>

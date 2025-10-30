@@ -1,7 +1,10 @@
 import { Shield, TreePine, Users, Award, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const Home = () => {
+  const { t } = useTranslation()
+
   return (
     <div className="pt-20">
       {/* hero banner moderno com overlay sofisticado */}
@@ -20,28 +23,27 @@ const Home = () => {
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white animate-slide-up">
-              Guardianes de la
+              {t('guardians_of')}
               <span className="block bg-gradient-to-r from-park-yellow-300 via-park-yellow-400 to-park-yellow-500 bg-clip-text text-transparent">
-                Naturaleza
+                {t('nature')}
               </span>
             </h1>
             <p className="text-xl md:text-2xl mb-10 text-white/90 leading-relaxed animate-slide-up" style={{animationDelay: '0.1s'}}>
-              Dedicados a preservar y proteger los ecosistemas naturales de San Andreas 
-              para las generaciones presentes y futuras.
+              {t('dedicated_to_preserving')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{animationDelay: '0.2s'}}>
               <Link
                 to="/reclutamiento"
                 className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-park-yellow-400 to-park-yellow-500 text-park-blue-900 font-bold rounded-xl hover:shadow-strong transition-all duration-300 hover:scale-105 hover:-translate-y-1"
               >
-                Únete a Nuestro Equipo
+                {t('join_our_team')}
                 <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Link>
               <a
                 href="#sobre"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300"
               >
-                Conocer Más
+                {t('learn_more')}
               </a>
             </div>
           </div>
@@ -60,17 +62,13 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-20">
             <div className="inline-block px-4 py-2 bg-park-green-50 border border-park-green-200 rounded-full mb-6">
-              <span className="text-park-green-700 text-sm font-semibold">Nuestra Misión</span>
+              <span className="text-park-green-700 text-sm font-semibold">{t('our_mission')}</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-park-blue-700 to-park-green-700 bg-clip-text text-transparent mb-6">
-              Quiénes Somos
+              {t('who_we_are')}
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Los Park Rangers de San Andreas State Parks somos una institución 
-              dedicada a la protección, conservación y gestión de las áreas naturales 
-              protegidas del estado. Con más de <span className="font-bold text-park-green-600">150 años de historia</span>, nuestro compromiso 
-              es garantizar que las futuras generaciones puedan disfrutar de la belleza 
-              natural que nos rodea.
+              {t('park_rangers_san_andreas', { years: '150' })}
             </p>
           </div>
 
@@ -83,9 +81,9 @@ const Home = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-park-blue-500 to-park-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-medium">
                   <Shield className="text-white" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-park-blue-600 transition-colors">Protección</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-park-blue-600 transition-colors">{t('protection')}</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Salvaguardamos la flora y fauna de nuestros parques estatales
+                  {t('safeguard_flora_fauna')}
                 </p>
               </div>
             </div>
@@ -97,9 +95,9 @@ const Home = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-park-green-500 to-park-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-medium">
                   <TreePine className="text-white" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-park-green-600 transition-colors">Conservación</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-park-green-600 transition-colors">{t('conservation')}</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Preservamos los ecosistemas naturales para el futuro
+                  {t('preserve_ecosystems')}
                 </p>
               </div>
             </div>
@@ -111,9 +109,9 @@ const Home = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-park-yellow-500 to-park-yellow-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-medium">
                   <Users className="text-white" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-park-yellow-600 transition-colors">Comunidad</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-park-yellow-600 transition-colors">{t('community')}</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Trabajamos junto a la comunidad en educación ambiental
+                  {t('work_with_community')}
                 </p>
               </div>
             </div>
@@ -125,9 +123,9 @@ const Home = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-park-blue-500 to-park-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-medium">
                   <Award className="text-white" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-park-blue-600 transition-colors">Excelencia</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-park-blue-600 transition-colors">{t('excellence')}</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Mantenemos los más altos estándares de servicio público
+                  {t('highest_standards')}
                 </p>
               </div>
             </div>
@@ -140,13 +138,13 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-2 bg-park-blue-50 border border-park-blue-200 rounded-full mb-6">
-              <span className="text-park-blue-700 text-sm font-semibold">En Acción</span>
+              <span className="text-park-blue-700 text-sm font-semibold">{t('in_action')}</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-park-blue-700 to-park-green-700 bg-clip-text text-transparent mb-4">
-              Nuestro Trabajo
+              {t('our_work')}
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Conoce cómo protegemos y preservamos los parques estatales de San Andreas
+              {t('know_how_we_protect')}
             </p>
           </div>
           

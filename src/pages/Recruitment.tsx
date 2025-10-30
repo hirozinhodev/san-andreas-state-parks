@@ -1,6 +1,9 @@
 import { CheckCircle2, Users, GraduationCap, Heart, ArrowRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 const Recruitment = () => {
+  const { t } = useTranslation()
+
   return (
     <div className="pt-20">
       {/* hero banner recrutamento */}
@@ -16,11 +19,10 @@ const Recruitment = () => {
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-slide-up">
-              Únete a Nuestro Equipo
+              {t('join_our_team_title')}
             </h1>
             <p className="text-xl md:text-2xl text-white leading-relaxed animate-slide-up" style={{animationDelay: '0.1s'}}>
-              Conviértete en Park Ranger y forma parte de una tradición 
-              de servicio y protección ambiental
+              {t('become_park_ranger')}
             </p>
           </div>
         </div>
@@ -38,14 +40,13 @@ const Recruitment = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-2 bg-moss-green-50 border border-moss-green-200 rounded-full mb-6">
-              <span className="text-moss-green-700 text-sm font-semibold">Beneficios</span>
+              <span className="text-moss-green-700 text-sm font-semibold">{t('benefits')}</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-moss-green-700 to-moss-green-600 bg-clip-text text-transparent mb-4">
-              ¿Por Qué Ser Park Ranger?
+              {t('why_become_ranger')}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Ser parte de San Andreas State Parks significa más que un trabajo, 
-              es un compromiso con la naturaleza y nuestra comunidad
+              {t('why_become_ranger_description')}
             </p>
           </div>
 
@@ -56,10 +57,10 @@ const Recruitment = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-moss-green-700 mb-2">
-                  Propósito Significativo
+                  {t('meaningful_purpose')}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Protege y preserva la belleza natural de San Andreas para las futuras generaciones
+                  {t('protect_preserve_beauty')}
                 </p>
               </div>
             </div>
@@ -70,10 +71,10 @@ const Recruitment = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-moss-green-700 mb-2">
-                  Equipo Excepcional
+                  {t('exceptional_team')}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Trabaja junto a profesionales dedicados y apasionados por la conservación
+                  {t('work_with_dedicated')}
                 </p>
               </div>
             </div>
@@ -84,10 +85,10 @@ const Recruitment = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-moss-green-700 mb-2">
-                  Formación Continua
+                  {t('continuous_training')}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Accede a programas de capacitación y desarrollo profesional constante
+                  {t('access_training_programs')}
                 </p>
               </div>
             </div>
@@ -98,10 +99,10 @@ const Recruitment = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-moss-green-700 mb-2">
-                  Beneficios Completos
+                  {t('complete_benefits')}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Disfruta de un paquete de beneficios competitivo y estabilidad laboral
+                  {t('competitive_package')}
                 </p>
               </div>
             </div>
@@ -115,68 +116,67 @@ const Recruitment = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <div className="inline-block px-4 py-2 bg-moss-green-50 border border-moss-green-200 rounded-full mb-6">
-                <span className="text-moss-green-700 text-sm font-semibold">Requisitos</span>
+                <span className="text-moss-green-700 text-sm font-semibold">{t('requirements')}</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-moss-green-700 to-moss-green-600 bg-clip-text text-transparent">
-                ¿Qué Necesitas?
+                {t('what_you_need')}
               </h2>
             </div>
 
             <div className="bg-white rounded-2xl shadow-strong p-8 md:p-12 border border-gray-100">
               <h3 className="text-2xl font-semibold text-moss-green-700 mb-8 flex items-center gap-3">
                 <CheckCircle2 className="text-moss-green-600" size={32} />
-                Para unirte a nuestro equipo necesitas:
+                {t('to_join_our_team')}
               </h3>
               
               <ul className="space-y-5">
                 <li className="flex items-start group">
                   <CheckCircle2 className="text-moss-green-500 flex-shrink-0 mt-1 mr-4 group-hover:scale-125 transition-transform duration-300" size={22} />
                   <span className="text-gray-700 text-lg">
-                    Ser ciudadano de San Andreas o tener permiso de trabajo válido
+                    {t('citizen_san_andreas')}
                   </span>
                 </li>
                 <li className="flex items-start group">
                   <CheckCircle2 className="text-moss-green-500 flex-shrink-0 mt-1 mr-4 group-hover:scale-125 transition-transform duration-300" size={22} />
                   <span className="text-gray-700 text-lg">
-                    Tener al menos 21 años de edad
+                    {t('at_least_21')}
                   </span>
                 </li>
                 <li className="flex items-start group">
                   <CheckCircle2 className="text-moss-green-500 flex-shrink-0 mt-1 mr-4 group-hover:scale-125 transition-transform duration-300" size={22} />
                   <span className="text-gray-700 text-lg">
-                    Diploma de educación secundaria o equivalente
+                    {t('high_school_diploma')}
                   </span>
                 </li>
                 <li className="flex items-start group">
                   <CheckCircle2 className="text-moss-green-500 flex-shrink-0 mt-1 mr-4 group-hover:scale-125 transition-transform duration-300" size={22} />
                   <span className="text-gray-700 text-lg">
-                    Licencia de conducir válida
+                    {t('valid_drivers_license')}
                   </span>
                 </li>
                 <li className="flex items-start group">
                   <CheckCircle2 className="text-moss-green-500 flex-shrink-0 mt-1 mr-4 group-hover:scale-125 transition-transform duration-300" size={22} />
                   <span className="text-gray-700 text-lg">
-                    Excelente condición física y capacidad para trabajar al aire libre
+                    {t('excellent_physical_condition')}
                   </span>
                 </li>
                 <li className="flex items-start group">
                   <CheckCircle2 className="text-moss-green-500 flex-shrink-0 mt-1 mr-4 group-hover:scale-125 transition-transform duration-300" size={22} />
                   <span className="text-gray-700 text-lg">
-                    Pasar verificación de antecedentes y examen médico
+                    {t('background_check')}
                   </span>
                 </li>
                 <li className="flex items-start group">
                   <CheckCircle2 className="text-moss-green-500 flex-shrink-0 mt-1 mr-4 group-hover:scale-125 transition-transform duration-300" size={22} />
                   <span className="text-gray-700 text-lg">
-                    Pasión por la conservación y el servicio público
+                    {t('passion_conservation')}
                   </span>
                 </li>
               </ul>
 
               <div className="mt-10 p-6 bg-gradient-to-r from-moss-green-50 to-park-yellow-50 rounded-xl border-l-4 border-moss-green-500">
                 <p className="text-gray-700 leading-relaxed">
-                  <strong className="text-moss-green-700 text-lg">Nota:</strong> Se valorará experiencia previa 
-                  en aplicación de la ley, servicios de emergencia, o gestión de recursos naturales.
+                  <strong className="text-moss-green-700 text-lg">{t('note')}</strong> {t('prior_experience_valued')}
                 </p>
               </div>
             </div>
@@ -189,10 +189,10 @@ const Recruitment = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-2 bg-moss-green-50 border border-moss-green-200 rounded-full mb-6">
-              <span className="text-moss-green-700 text-sm font-semibold">5 Pasos</span>
+              <span className="text-moss-green-700 text-sm font-semibold">{t('5_steps')}</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-moss-green-700 to-moss-green-600 bg-clip-text text-transparent">
-              Proceso de Selección
+              {t('selection_process')}
             </h2>
           </div>
 
@@ -204,10 +204,10 @@ const Recruitment = () => {
                 </div>
                 <div className="flex-1 pt-2">
                   <h3 className="text-2xl font-semibold text-moss-green-700 mb-3">
-                    Aplicación en Línea
+                    {t('online_application')}
                   </h3>
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    Completa el formulario de solicitud con tus datos personales y experiencia
+                    {t('complete_application_form')}
                   </p>
                 </div>
               </div>
@@ -218,10 +218,10 @@ const Recruitment = () => {
                 </div>
                 <div className="flex-1 pt-2">
                   <h3 className="text-2xl font-semibold text-moss-green-700 mb-3">
-                    Evaluación Inicial
+                    {t('initial_evaluation')}
                   </h3>
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    Revisión de documentos y verificación de requisitos básicos
+                    {t('document_review')}
                   </p>
                 </div>
               </div>
@@ -232,10 +232,10 @@ const Recruitment = () => {
                 </div>
                 <div className="flex-1 pt-2">
                   <h3 className="text-2xl font-semibold text-moss-green-700 mb-3">
-                    Examen Físico
+                    {t('physical_exam')}
                   </h3>
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    Pruebas de aptitud física y evaluación médica completa
+                    {t('fitness_tests')}
                   </p>
                 </div>
               </div>
@@ -246,10 +246,10 @@ const Recruitment = () => {
                 </div>
                 <div className="flex-1 pt-2">
                   <h3 className="text-2xl font-semibold text-moss-green-700 mb-3">
-                    Entrevista Personal
+                    {t('personal_interview')}
                   </h3>
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    Entrevista con el panel de selección para evaluar motivación y competencias
+                    {t('panel_interview')}
                   </p>
                 </div>
               </div>
@@ -260,10 +260,10 @@ const Recruitment = () => {
                 </div>
                 <div className="flex-1 pt-2">
                   <h3 className="text-2xl font-semibold text-moss-green-700 mb-3">
-                    Academia de Formación
+                    {t('training_academy')}
                   </h3>
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    Programa intensivo de 12 semanas de capacitación teórica y práctica
+                    {t('intensive_program')}
                   </p>
                 </div>
               </div>
@@ -282,18 +282,17 @@ const Recruitment = () => {
         
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-slide-up">
-            ¿Listo para Comenzar tu Carrera?
+            {t('ready_to_start')}
           </h2>
           <p className="text-xl text-white mb-12 max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{animationDelay: '0.1s'}}>
-            El proceso de reclutamiento está abierto. No pierdas la oportunidad 
-            de formar parte de esta institución histórica.
+            {t('recruitment_open')}
           </p>
           <div className="animate-slide-up" style={{animationDelay: '0.2s'}}>
             <a
               href="mailto:emteste@stateparks.lossantos.gov"
               className="group inline-flex items-center px-12 py-6 bg-white text-moss-green-800 font-bold rounded-xl hover:bg-park-yellow-100 hover:text-moss-green-900 transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-2xl text-lg"
             >
-              Enviar Solicitud
+              {t('send_application')}
               <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform duration-300" size={24} />
             </a>
           </div>
